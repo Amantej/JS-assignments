@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h3>assignment 1</h3>
+    </head>
+    <body>
+        <script>
+        // day part
+            var myDate = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            document.write("Today is :"+weekday[myDate.getDay()]);
+            document.write("<br/>"); 
+        
+        // time part. 
+            var hours = myDate.getHours(); 
+            var ampm = hours >= 12 ? 'PM' : 'AM'; 
+            hours = hours % 12; 
+            hours = hours ? hours : 12; 
+            var minutes = myDate.getMinutes(); 
+            minutes = minutes < 10 ? '0' + minutes : minutes; 
+            var myTime = hours + " " + ampm + " : " + minutes + " : " + myDate.getMilliseconds(); 
+            document.write("\tCurrent time is : " + myTime); 
+            document.write("Current time is :"+d.getTime());
+        </script>
+    </body>
+</html>
