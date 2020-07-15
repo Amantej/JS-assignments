@@ -1,0 +1,27 @@
+var: These are generally global scope/variables and can be mutable all over the code.
+let: These are local or block scope/variables and can be mutable in that particular code of block, where it is intialized.
+const: These are constant variables and these are immutable. (blocked scope)
+eg:
+1.var:
+<script>
+var a = "alpha";
+{
+    var a = "beta";
+}
+console.log(a) //prints beta
+</script>
+2.let:
+<script>
+var a = "alpha";
+{
+    let a = "beta";
+    console.log(a) //prints beta
+}
+console.log(a) //prints alpha
+</script>
+3.const:
+<script>
+const a = "alpha";
+a = "mikkel"
+console.log(a) //throws error
+</script>

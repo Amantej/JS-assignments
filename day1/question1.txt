@@ -1,0 +1,17 @@
+1.console.log():
+The console. log() is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user. 
+Syntax: console.
+eg: console.log("I didn't copied this from google")
+2.console.table():
+Displays tabular data as a table
+3.console.time():
+Starts a timer
+4.console.warn():
+Outputs a warning message to the console
+eg:console.warn("hey this is just a warning)
+5.console.error():
+Outputs an error message to the console
+6.console.count():
+Logs the number of times that this particular call to count() has been called
+7.console.group():
+Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
