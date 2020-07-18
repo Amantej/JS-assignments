@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Question 2</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1>Array funtions using examples</h1>
+    <script>
+        var cast = ["adam", "jonas", "martha", "eve"];//Array
+        len1 = [cast.length] ; //returns length of array
+        console.log(len1);
+        cast.splice(3, 0, "fransiska", "mikkel"); //The splice() method can be used to add new items/delete to/from an array: , returns deleted elements
+        console.log(cast);
+        cast.reverse(); //Reverse the Array
+        delete cast[1]; // elements can be deleted by using the JavaScript operator delete
+        console.log(cast);
+        var str = "ALEXISD";// string
+        var len2 = str.length; //The length property returns the length of a string
+        console.log(str,len2);
+        var pos = str.indexOf("D"); //The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string
+        console.log(pos);
+        var pos = str.search("I"); //The search() method searches a string for a specified value and returns the position of the match
+        console.log(pos);
+    </script>
+</body>
+</html>
