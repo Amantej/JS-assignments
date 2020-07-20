@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<body>
+    <h1>sales log, open console to see output</h1>
+    <script>
+        var sales = prompt("Enter Sales");
+        var com = 0;
+        if(sales<=5000){
+            com = (2*sales)/100;
+        }
+        else if (sales >= 5001 && sales <= 10000)
+        {
+            com = (5*sales)/100;
+        }
+        else if (sales >= 10001 && sales <= 20000)
+        {
+            com = (7*sales)/100;
+        }
+        else if (sales > 20000)
+        { com = (10*sales)/100;}
+
+        console.log(`commision recieved = ${com}`);
+    </script>
+</body>
+</html>

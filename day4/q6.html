@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <h1>user multiple input, open console to see output</h1>
+    <script>
+        let v = []
+        while(true){
+            var num = prompt("Enter a number");
+            v.push(num);
+            let x = (num <= 100 || num == ' ') ? "yes" : "no";
+            if(x == "no"){console.log("enter again")}
+            else{break}
+        }
+        
+        console.log(v);
+    </script>
+</body>
+</html>

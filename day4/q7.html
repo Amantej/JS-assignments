@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+    <h1>primes upto given number, open console to see output</h1>
+    <script>
+        
+        var num = +prompt("Enter number");
+        function isPrime(n) {
+        if (isNaN(n) || !isFinite(n) || n%1 || n<2) return false; 
+        if (n%2==0) return (n==2);
+        var m=Math.sqrt(n);
+        for (var i=3;i<=m;i+=2) {
+            if (n%i==0) return false;
+        }
+        return true;
+        }
+        let j = 1
+        while(j<num){
+            if(isPrime(j)){
+                console.log(j)
+            }
+            j+=1
+        }
+
+
+    </script>
+</body>
+</html>
